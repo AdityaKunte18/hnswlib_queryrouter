@@ -6,6 +6,8 @@ int main(int argc, char** argv) {
     const std::string bvecs =  "/Users/adityakunte/Desktop/createlab/data/sift_1B/bigann_base.bvecs.gz";
 
     //vectors we will use to build the hnsw
+    //we dont actually read 10 million, it depends on the TARGET_COUNT value inside this function
+    //which is 100k
     std::vector<std::vector<float>> b_rand = ReadFirst10MBvecsGz(bvecs);
    
     

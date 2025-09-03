@@ -76,7 +76,9 @@ std::vector<std::vector<float>> ReadFvecsRandom(const std::string& filename, int
 
 
 std::vector<std::vector<float>> ReadFirst10MBvecsGz(const std::string& gz_filename) {
-    // 10M vectors for HNSW takes a long time, need to use ParallelFor from the tutorials
+    // 10M vectors for HNSW takes a long time, need to use ParallelFor from the tutorials when building hnsw
+
+    //we dont actually read 10 million, it depends on the TARGET_COUNT value
     constexpr size_t TARGET_COUNT = 100000;  // 100k
 
     gzFile f = gzopen(gz_filename.c_str(), "rb");
