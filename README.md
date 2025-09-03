@@ -26,7 +26,12 @@ make all
 
 ### Build main.cpp, QueryRouter.cpp and utils.cpp
 
+```bash
 clang++ -std=c++20 -O2 -Wall -Wextra -I. utils/utils.cpp QueryRouter.cpp main.cpp -o main -lz
+```
 
 ### Run
+
+```
 ./main
+```
