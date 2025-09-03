@@ -1,5 +1,18 @@
 # hnswlib_queryrouter
 
+### Get data from http://corpus-texmex.irisa.fr/
+
+
+#### for SIFT 1M (500 MB)
+```bash
+wget ftp://ftp.irisa.fr/local/texmex/corpus/sift.tar.gz
+```
+
+#### for SIFT 1B (92 GB)
+```bash
+wget ftp://ftp.irisa.fr/local/texmex/corpus/bigann_base.bvecs.gz
+```
+
 ### Build hnswlib (this lets you run the examples)
 
 ```bash
